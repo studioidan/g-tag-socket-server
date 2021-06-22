@@ -2,7 +2,9 @@ const express = require('express');
 const PORT = process.env.PORT || 3001;
 const axios = require('axios').default;
 
-const serverUrl  = 'http://localhost:3000/api/sample?data=';
+// test
+// const serverUrl  = 'http://localhost:3000/api/sample?data=';
+const serverUrl  = 'https://gtag930.herokuapp.com/api/sample?data=';
 
 
 const server = express()
