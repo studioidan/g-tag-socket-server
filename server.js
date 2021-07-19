@@ -53,6 +53,7 @@ let server = net.createServer(function (socket) {
 
         if (str.toLowerCase() === 'send configuration') {
             console.log('unit want to check for configuration');
+            socket.emit('new config');
             return;
         }
 
