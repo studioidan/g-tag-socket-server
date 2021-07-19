@@ -48,6 +48,14 @@ let server = net.createServer(function (socket) {
         let str = data.toString();
         console.log('data came in', str);
 
+
+        // todo unit should send json like : {unitId: 'XYZ', 'cmd': 'requestConfiguration'}
+
+        if (str.toLowerCase() === 'send configuration') {
+            console.log('unit want to check for configuration');
+            return;
+        }
+
         // send data to server
         // axios.get(serverUrl + str);
     });
