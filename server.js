@@ -57,7 +57,7 @@ let server = net.createServer(function (socket) {
         }
 
         // send data to server
-        // axios.get(serverUrl + str);
+        axios.get(serverUrl + str);
     });
 
     socket.on('error', function (error) {
